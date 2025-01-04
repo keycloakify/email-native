@@ -1,0 +1,53 @@
+{
+    "name": "@keycloakify/email-native",
+    "version": "260007.0.0",
+    "description": "Native email theme extension for Keycloakify",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/keycloakify/email-native.git"
+    },
+    "scripts": {
+        "build": "tsx scripts/build.ts",
+        "_format": "prettier '**/*.{ts,tsx,json,md}'",
+        "format": "npm run _format -- --write",
+        "format:check": "npm run _format -- --list-different",
+        "link-in-starter": "tsx scripts/link-in-app.ts keycloakify-starter"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,json,md}": [
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged -v"
+        }
+    },
+    "author": "The Keycloak Team, re-packaged by u/garronej",
+    "license": "Apache-2.0",
+    "keywords": [
+        "keycloak",
+        "keycloakify",
+        "theme",
+        "email"
+    ],
+    "homepage": "https://github.com/keycloakify/email-native",
+    "devDependencies": {
+        "@types/make-fetch-happen": "^10.0.4",
+        "@types/node": "^20.2.1",
+        "husky": "^4.3.8",
+        "lint-staged": "^11.1.1",
+        "make-fetch-happen": "^14.0.3",
+        "prettier": "^3.3.2",
+        "tsx": "^4.15.5",
+        "typescript": "^5.4.5",
+        "zod": "^3.23.8",
+        "yauzl": "^3.2.0",
+        "evt": "^2.5.8",
+        "react": "^18.3.1",
+        "@types/react": "^18.3.12"
+    },
+    "dependencies": {
+        "tsafe": "^1.8.5"
+    }
+}

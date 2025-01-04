@@ -1,2 +1,3 @@
-# email-native
-Native FreeMarker email extention module
+# @keycloakify/email-native
+
+See: https://docs.keycloakify.dev/theme-types/email-theme
