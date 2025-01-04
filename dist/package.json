@@ -1,0 +1,19 @@
+{
+  "name": "@keycloakify/email-native",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "version": "260007.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keycloakify/email-native.git"
+  },
+  "license": "Apache-2.0",
+  "author": "The Keycloak Team, re-packaged by u/garronej",
+  "homepage": "https://github.com/keycloakify/email-native",
+  "keywords": [
+    "keycloak",
+    "keycloakify",
+    "theme",
+    "email"
+  ]
+}
