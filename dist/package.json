@@ -1,7 +1,5 @@
 {
   "name": "@keycloakify/email-native",
-  "main": "index.js",
-  "types": "index.d.ts",
   "version": "260007.0.0",
   "repository": {
     "type": "git",
@@ -15,5 +13,8 @@
     "keycloakify",
     "theme",
     "email"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

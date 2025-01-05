@@ -139,14 +139,15 @@ import { z } from "zod";
             JSON.stringify(
                 {
                     name: parsedPackageJson.name,
-                    main: "index.js",
-                    types: "index.d.ts",
                     version: parsedPackageJson.version,
                     repository: parsedPackageJson.repository,
                     license: parsedPackageJson.license,
                     author: parsedPackageJson.author,
                     homepage: parsedPackageJson.homepage,
-                    keywords: parsedPackageJson.keywords
+                    keywords: parsedPackageJson.keywords,
+                    publishConfig: {
+                        access: "public"
+                    }
                 },
                 null,
                 2
